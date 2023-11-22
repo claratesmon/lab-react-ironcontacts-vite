@@ -9,6 +9,11 @@ function App() {
     fiveContacts.push(contacts[i])
   }
   const [ironContacts, setContact] = useState(fiveContacts)
+  //const [ironContacts, setContact] = useState(contacts.slice(0,5))
+  
+  //const [remainingContacts, setRemainingContact] = useState(contacts.slice(5, contact.length)) --> Here we are only using the ones that are not on the array of 5, which is the one we already displayed.
+  
+
   //If you want to select the first 5 elements of the array you have to: 
 
   function addRandomContact() {
